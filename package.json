@@ -1,0 +1,13 @@
+{
+  "name": "biz21century",
+  "version": "0.0.1",
+  "author": "Erwin van der Koogh",
+  "description": "The blog at http://businessin21stcentury.com",
+  "devDependencies": {
+    "moment": "~1.7.2",
+    "underscore": "~1.5.1",
+    "wintersmith": "~2.0.5",
+    "wintersmith-nunjucks": "~0.2.0",
+    "typogr": "0.5.x"
+  }
+}

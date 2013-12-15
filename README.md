@@ -1,4 +1,4 @@
-bizin21century
-==============
 
-Website for http://businessin21stcentury.com. Static website generated with Wintersmith
+# Blog
+
+The default [wintersmith](https://github.com/jnordberg/wintersmith) template

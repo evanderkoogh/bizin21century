@@ -1,0 +1,23 @@
+{
+  "locals": {
+    "author": "Erwin van der Koogh",
+    "siteName": "Business in the 21st Century",
+    "tagline": "How to not just survive, but thrive in the 21 century",
+    "dateDescriptionFormat": "dddd, MMMM Do YYYY"
+  },
+  "plugins": [
+    "wintersmith-nunjucks"
+  ],
+  "require": {
+    "moment": "moment",
+    "_": "underscore",
+    "typogr": "typogr"
+  },
+  "markdown": {
+    "smartLists": true,
+    "smartypants": true
+  },
+  "paginator": {
+    "perPage": 3
+  }
+}
