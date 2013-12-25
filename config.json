@@ -6,7 +6,8 @@
     "dateDescriptionFormat": "dddd, MMMM Do YYYY"
   },
   "plugins": [
-    "wintersmith-nunjucks"
+    "wintersmith-nunjucks",
+    "./plugins/contentHelpers.js"
   ],
   "require": {
     "moment": "moment",

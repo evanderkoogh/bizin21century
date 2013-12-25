@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<!--[if IE 8]>			<html class="ie ie8"> <![endif]-->
+<!--[if IE 9]>			<html class="ie ie9"> <![endif]-->
+<!--[if gt IE 9]><!-->	<html> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta content="width=device-width, initial-scale=1.0" name="viewport">
+		{% block meta %}
+		<meta name="keywords" content="Business in 21st Century, management, leadership, agile, lean, stoos" />
+		<meta name="description" content="Rethinking the way we do business to survive &amp; thrive in the 21st Century">
+		<meta name="author" content="Erwin van der Koogh">
+		{% endblock %}
+
+
+		<title>{% block title%}{% endblock %}</title>
+
+		<!-- Web Fonts  -->
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Shadows+Into+Light" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="/css/style.css">
+		<script src="/js/modernizr.js"></script>
+
+		<!--[if IE]>
+			<link rel="stylesheet" href="css/ie.css">
+		<![endif]-->
+
+		<!--[if lte IE 8]>
+			<script src="vendor/respond.js"></script>
+		<![endif]-->
+
+
+	</head>
+	<body>
+
+		<div class="body">
+			<header>
+				<div class="container">
+					<h1 class="logo">
+						<a href="/">
+							<img src="/img/logo.png" />
+						</a>
+					</h1>
+					<div class="search">
+						<form id="searchForm" action="page-search-results.html" method="get">
+							<div class="input-group">
+								<input type="text" class="form-control search" disabled name="q" id="q" placeholder="Search...">
+								<span class="input-group-btn">
+									<button class="btn btn-default" type="button"><i class="icon icon-search"></i></button>
+								</span>
+							</div>
+						</form>
+					</div>
+					<button class="btn btn-responsive-nav btn-inverse" data-toggle="collapse" data-target=".nav-main-collapse">
+						<i class="icon icon-bars"></i>
+					</button>
+				</div>
+				<div class="navbar-collapse nav-main-collapse collapse">
+					<div class="container">
+						<div class="social-icons">
+								<ul class="social-icons">
+									<li class="twitter"><a href="http://www.twitter.com/evanderkoogh" target="_blank" data-placement="bottom" rel="tooltip" title="Twitter">Twitter</a></li>
+									<li class="facebook"><a href="http://www.facebook.com/" target="_blank" data-placement="bottom" rel="tooltip" title="Facebook">Facebook</a></li>
+									<li class="rss"><a href="/feed.xml" target="_blank" data-placement="bottom" rel="tooltip" title="RSS">RSS</a></li>
+								</ul>
+							</div>
+						<nav class="nav-main mega-menu">
+							<ul class="nav nav-pills nav-main" id="mainMenu">
+								<li><a href="/">Home</a></li>
+								<li><a href="/about/">About us</a></li>
+								<li><a href="/books/">Books</a></li>
+								<li><a href="/cases/">Case-studies</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</header>
+
+			<div role="main" class="main">
+
+				<section class="page-top">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12">
+								<h2>Rethinking the way we do business</h2>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<div class="container">
+
+					<div class="row">
+						<div class="col-md-9">
+
+						{% block content %}
+						{% endblock %}
+
+
+						</div>
+						<div class="col-md-3">
+							<aside class="sidebar">
+								<div class="newsletter">
+									<h4>Subscribe</h4>
+									<!-- Begin MailChimp Signup Form -->
+									<div id="mc_embed_signup">
+										<form action="http://web-ics.us5.list-manage.com/subscribe/post?u=6b44e72108775916bbfb53900&amp;id=784d95f6cf" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+											<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+									    <div style="position: absolute; left: -5000px;"><input type="text" name="b_6b44e72108775916bbfb53900_784d95f6cf" value=""></div>
+											<div class="clear"></div>
+											<div class="input-group">
+												<input type="email" value="" name="EMAIL" class="form-control" id="mce-EMAIL" placeholder="Email Address" required>
+												<span class="input-group-btn">
+													<input type="submit" value="Go!" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary">
+												</span>
+											</div>
+										</form>
+									</div>
+								</div>
+
+								<hr />
+
+								<h4>About Us</h4>
+								<p><em>Change is changing. Between the increasing rate of technology adoption, plummeting hardware prices and the power shift from companies to consumers, the only competitive advantage left is having a learning organisation. <br/>Unfortunately most companies are build for the exact opposite: Efficiently operating a given business model.</em></p>
+								<p><strong>Time to completely rethink the way we do business the 21<sup>st</sup> century.</strong></p>
+
+								<hr />
+
+							</aside>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+			<footer>
+				<div class="container">
+					<div class="row">
+						<div class="footer-ribon">
+							<span>Get in Touch</span>
+						</div>
+						<div class="col-md-3">
+							<div class="newsletter">
+								<h4>Newsletter</h4>
+								<p>Sign up to our newsletter to be informed of new posts and other news.</p>
+
+								<!-- Begin MailChimp Signup Form -->
+								<div id="mc_embed_signup">
+									<form action="http://web-ics.us5.list-manage.com/subscribe/post?u=6b44e72108775916bbfb53900&amp;id=784d95f6cf" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+										<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+								    <div style="position: absolute; left: -5000px;"><input type="text" name="b_6b44e72108775916bbfb53900_784d95f6cf" value=""></div>
+										<div class="clear"></div>
+										<div class="input-group">
+											<input type="email" value="" name="EMAIL" class="form-control" id="mce-EMAIL" placeholder="Email Address" required>
+											<span class="input-group-btn">
+												<input type="submit" value="Go!" name="subscribe" id="mc-embedded-subscribe" class="btn btn-default">
+											</span>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<h4>Latest Tweets</h4>
+							<div id="tweet" class="twitter">
+								<a class="twitter-timeline" href="https://twitter.com/search?q=%23biz21c" data-widget-id="412169203475443712">Tweets about "#biz21c"</a>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="contact-details">
+								<h4>Get in touch</h4>
+								<ul class="contact">
+									<li><a href="https://twitter.com/evanderkoogh" class="twitter-follow-button" data-show-count="false">Follow @evanderkoogh</a></li>
+									<li><a href="https://twitter.com/intent/tweet?screen_name=evanderkoogh" class="twitter-mention-button" data-related="evanderkoogh">Tweet to @evanderkoogh</a></li>
+									<li><a href="https://twitter.com/intent/tweet?button_hashtag=biz21c" class="twitter-hashtag-button" data-related="evanderkoogh" data-url="http://bizin21stcentury.com">Tweet #biz21c</a></li>
+									<a href="https://www.goodreads.com/review/list/14753542?shelf=business-in-the-21st-century" title="Erwin Van der koogh's book recommendations"><img border="0" alt="Erwin Van der koogh's book recommendations" src="https://www.goodreads.com/images/badge/badge1.jpg"></a>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-2">
+							<h4>Follow Us</h4>
+							<div class="social-icons">
+								<ul class="social-icons">
+									<li class="twitter"><a href="http://www.twitter.com/" target="_blank" data-placement="bottom" rel="tooltip" title="Twitter">Twitter</a></li>
+									<li class="facebook"><a href="http://www.facebook.com/" target="_blank" data-placement="bottom" rel="tooltip" title="Facebook">Facebook</a></li>
+									<li class="rss"><a href="/feed.xml" target="_blank" data-placement="bottom" rel="tooltip" title="RSS">RSS</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer-copyright">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-1">
+								<p>Made with</p>
+								<a href="index.html" class="logo">
+									<img alt="Porto Website Template" class="img-responsive" src="/img/logo-footer.png">
+								</a>
+							</div>
+							<div class="col-md-11">
+								<p><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Business in the 21st Century</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://businessin21stcentury.com" property="cc:attributionName" rel="cc:attributionURL">Erwin van der Koogh</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+		<!-- Libs -->
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="http://platform.twitter.com/widgets.js"></script>
+		<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+		
+		<!--
+		
+		<script src="js/app.min.js"></script> -->
+
+		<!-- Google Analytics: Change UA-XXXXX-X to be your site's ID. Go to http://www.google.com/analytics/ for more information.
+		<script>
+			(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+			function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+			e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+			e.src='//www.google-analytics.com/analytics.js';
+			r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+			ga('create','UA-XXXXX-X');ga('send','pageview');
+		</script>
+		 -->
+
+	</body>
+</html>

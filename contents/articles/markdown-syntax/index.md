@@ -2,7 +2,10 @@
 title: Markdown syntax
 author: John Gruber
 date: 2012-02-02
-template: about.html
+tagLine: Best markup for Bloggers!
+featuredImage: https://d202m5krfqbpi5.cloudfront.net/books/1363560329l/16158601.jpg
+template: post.html
+tags: [markdown, html]
 ---
 
 Full markdown syntax taken from John Gruber's [Daring Fireball](http://daringfireball.net/projects/markdown/syntax).

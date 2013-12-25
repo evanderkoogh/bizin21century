@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+
+{% block title %}{{page.title}} - Business in the 21st Century {% endblock %}
+
+{% block content %}
+							<div class="blog-posts single-post">
+								<article class="post post-large-image blog-single-post">
+									<div class="post-date">
+										<span class="day">{{ moment(page.date).format('D') }}</span>
+										<span class="month">{{ moment(page.date).format('MMM') }}</span>
+									</div>
+									<div class="post-content">
+
+										<h2><a href="#">{{page.title}}</a></h2>
+
+										<div class="post-meta">
+											<span><i class="icon icon-user"></i> By <a href="#">{{page.metadata.author}}</a> </span>
+											{% if page.metadata.tags %}
+											<span><i class="icon icon-tag"></i>
+												{% for tag in page.metadata.tags %}
+												<a href="#">{{tag}}</a>
+												{% endfor %}
+											</span>
+											{% endif %}
+											<span><i class="icon icon-comments"></i> <a href="#">12 Comments</a></span>
+											{{ page.html }}
+										</div>
+										<div class="post-block post-share">
+											<h3><i class="icon icon-share"></i>Share this post</h3>
+
+											<!-- AddThis Button BEGIN -->
+											<div class="addthis_toolbox addthis_default_style ">
+												<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+												<a class="addthis_button_tweet"></a>
+												<a class="addthis_button_pinterest_pinit"></a>
+												<a class="addthis_counter addthis_pill_style"></a>
+											</div>
+											<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=xa-50faf75173aadc53"></script>
+											<!-- AddThis Button END -->
+
+										</div>
+
+										<div class="post-block post-author clearfix">
+											<h3><i class="icon icon-user"></i>Author</h3>
+											<div class="img-thumbnail">
+												<img src="/img/headshot.jpg" alt="Erwin van der Koogh">
+											</div>
+											<p><strong class="name"><a href="http://nl.linkedin.com/in/evanderkoogh/">Erwin van der Koogh</a></strong></p>
+											<p>Erwin is a typical <a href="http://en.wikipedia.org/wiki/Maven"><strong>Maven</strong></a>. A collector (and mixer) of cool ideas on how to <em>radically</em> change the way we do business. To unleash the potential of employees at all levels to delight customers everywhere. That is the only way to <em>survive &amp; thrive</em> in the 21<sup>st</sup> century.</p>
+										</div>
+									</div>
+								</article>
+							</div>
+{% endblock %}
