@@ -5,26 +5,19 @@ author: Erwin van der Koogh
 date: 2013-12-08
 template: page.html
 keywords: evanderkoogh, 21st century, complexity, survive, thrive, learning organisations
-changefreq: monthly
+changefreq: weekly
 priority: 0.7
 ---
 
-## Change is changing
+### Our mission
 
-It is not just that the world is changing at a frightening pace, but it is also changing the in a lot of other dimensions as well.
-A famour example of that is Moore's Law, which still holds true almost 50 years later. A doubling of processor capacity every 2 years.
-But it is also the cost of that hardware. 1GB of storage for example cost $200,000 back in 1980. Today it is $0.063.  
+Is to drag management thinking into the 21<sup>st</sup> century. Current management thinking is still largely based on the Scientific Management, pioneered by Frederick Winston Taylor called in late 1800s. Don't get me wrong, it is very hard to overstate just how important a role it played in creating our current prosperity. But while management theory has been tweaked here and there, the world around it has been changed completely.
+It is no wonder we are in the mess we are in. We are still using techniques that rely on a predictable, partitioned, linear, bell-curve world, while are living in an unpredictable, integrated, exponential, power-law world.
 
-But the most fundamental shift is the one shifting of the power. It is shifting from big corporations to both customers and small producers.
-Technologies like social media, crowd funding, self-publishing, app stores, online marketplaces, comparison sites and many others have completely leveled the playing field and even gave the home field advantage to consumers and independent producers.
+This 'new' reality comes with a huge set of challenges, but an even bigger set of opportunities for everyone. Traditional boundaries are all coming tumbling down: Economies of scale are losing their importance, capital requirements to start a business have plummeted, information and education is more accessible than ever and barriers to entry to crumbling everywhere and power is shifting from companies to consumers. The playing field has never been this level.
+One of the biggest tradegies is that we unable to take proper advantage of these opportunities. Research shows just 11% of the working population is engaged at work. People just don't care enough. And managers are very ill-prepared to deal with unpredictability and uncertainty.
 
-## So what do we do about it?
+But here's the great news: __We know how to do it__. There are tons of books, research papers and even examples of companies who are doing things differently.
+We know what it takes to get people engaged. We know what we need to do to deal with uncertainty. It is just not standard practice yet.
 
-We have to radically rethink on how to do business in the 21st century. The only real competitive advantage that will be left is the ability to learn and to put those learnings into action. Unfortunately most current organisations are designed for the almost the exact opposite. To execute a given process as efficiently as possible.
-
-The good news is that there are already quite a few examples of companies that are adapting to this new reality. And a lot has been written about it. Our mission is to spread the news and inspire others to adapt the way they work to survive & thrive in the 21st century.
-
-## Contact Me
-
-<a id="contact"></a>The best way to reach me is on Twitter at <a href="http://www.twitter.com/evanderkoogh" target="_blank">@evanderkoogh</a>.  In addition, you can send mail at info at erronis dot nl.
-
+I truly believe that we can solve our current problems; recession, climate change & hunger to name just a few if we can get enough people engaged. And to do that we need to change how we think about business. We will need that to survive & thrive in the 21<sup>st</sup> century.
