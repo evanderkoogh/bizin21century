@@ -1,0 +1,8 @@
+{% extends "layout.html" %}
+
+{% block title %}{{page.title}}{% endblock %}
+
+{% block content %}
+							<h2><strong>{{page.title}}</strong></h2>
+							{{ typogr(page.html).typogrify() }}
+{% endblock %}
