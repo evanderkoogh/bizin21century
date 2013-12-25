@@ -69,7 +69,7 @@ module.exports = function(env, callback) {
 		{
 			console.log("IS FILE - NULL VALUE");
 		}
-		return currentItem.hasOwnProperty('__filename');
+		return (currentItem.hasOwnProperty('__filename') && currentItem['__filename'] != 'generator');
 	};
 
 	var isDirectory = function(currentItem) {
@@ -111,15 +111,11 @@ module.exports = function(env, callback) {
 	};
 
 	var getOutputFilename = function(fileObj) {
-		var directory = fileObj.__filename.substring(0, fileObj.__filename.lastIndexOf("/")+1);
-		var fileName = fileObj.__filename.substring(fileObj.__filename.lastIndexOf("/")+1);
-		if(fileObj._metadata && fileObj._metadata.hasOwnProperty('filename'))
+		var directory = fileObj.filepath.relative.substring(0, fileObj.filepath.relative.lastIndexOf("/")+1);
+		var fileName = fileObj.filepath.relative.substring(fileObj.filepath.relative.lastIndexOf("/")+1);
+		if(fileObj.metadata && fileObj.metadata.hasOwnProperty('filename'))
 		{
-			fileName = fileObj.__metadata.filename;
-			if(!isFilenameSitemapFile(fileName))
-			{
-				return;
-			}
+			fileName = fileObj.metadata.filename;
 		}
 		else
 		{

@@ -14,7 +14,7 @@
 										<h2><a href="#">{{page.title}}</a></h2>
 
 										<div class="post-meta">
-											<span><i class="icon icon-user"></i> By <a href="#">{{page.metadata.author}}</a> </span>
+											<span><i class="icon icon-user"></i> By <a href="/about/">{{page.metadata.author}}</a> </span>
 											{% if page.metadata.tags %}
 											<span><i class="icon icon-tag"></i>
 												{% for tag in page.metadata.tags %}
@@ -23,7 +23,12 @@
 											</span>
 											{% endif %}
 											<span><i class="icon icon-comments"></i> <a href="#">12 Comments</a></span>
-											{{ page.html }}
+										</div>
+										<div class="clearfix media">
+											{% if page.metadata.featuredImage %}
+												<img class="img-rounded pull-left" height="250" src="{{ page.metadata.featuredImage }}" alt="">
+												{% endif %}
+											{{ typogr(page.html).typogrify() }}
 										</div>
 										<div class="post-block post-share">
 											<h3><i class="icon icon-share"></i>Share this post</h3>

@@ -4,8 +4,7 @@
 
 {% block content %}
 							<div class="blog-posts">
-								{% set articles = env.helpers.getSortedContentFolder("articles",contents) %}
-								{% for article in articles %}
+								{% for article in contents['index.page'].articles %}
 								<article class="post post-medium-image">
 									<div class="row">
 
@@ -24,7 +23,7 @@
 												{% if article.metadata.tagLine %}
 												<h4><a href="{{ article.url }}">{{ article.metadata.tagLine }}</a></h4>
 												{% endif %}
-												<p>{{ article.intro }}</p>
+												<p>{{ typogr(article.intro).typogrify() }}</p>
 											</div>
 										</div>
 
@@ -33,7 +32,7 @@
 										<div class="col-md-12">
 											<div class="post-meta">
 												<span><i class="icon icon-calendar"></i> {{ moment(article.date).format('D MMMM YYYY') }} </span>
-												<span><i class="icon icon-user"></i> By <a href="#">Erwin van der Koogh</a> </span>
+												<span><i class="icon icon-user"></i> By <a href="/about/">Erwin van der Koogh</a> </span>
 												<a href="{{ article.url }}" class="btn btn-xs btn-primary pull-right">Read more...</a>
 											</div>
 										</div>
