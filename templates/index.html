@@ -13,6 +13,10 @@
 												{% if article.metadata.featuredImage %}
 												<a href="{{ article.url }}"><img class="img-rounded" height="250" src="{{ article.metadata.featuredImage }}" alt=""></a>
 												{% endif %}
+												<br />
+												{% if article.metadata.copyright %}
+												<span>&copy; Picture by <a href="{{article.metadata.copyrightURL}}" target="_blank">{{article.metadata.copyright}}</a> </span>
+												{% endif %}
 											</div>
 										</div>
 										<div class="col-md-7">

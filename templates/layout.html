@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html prefix="og: http://ogp.me/ns#">
 <!--[if IE 8]>			<html class="ie ie8"> <![endif]-->
 <!--[if IE 9]>			<html class="ie ie9"> <![endif]-->
 <!--[if gt IE 9]><!-->	<html> <!--<![endif]-->
@@ -12,11 +12,21 @@
 		<meta name="author" content="Erwin van der Koogh">
 		{% endblock %}
 
+		<meta property="og:url" content="{{env.locals.url}}{{page.url}}" />
+		<meta property="og:title" content="{{page.title}}" />
+		<meta property="og:site_name" content="Business in the 21st Century" />
+		{% block ogp%}
+		<meta property="og:type" content="website" />
+		<meta property="og:description" content="Rethinking the way we do business to survive &amp; thrive in the 21st Century"/>
+		{% endblock%}
 
-		<title>{% block title%}{% endblock %} - {{locals.name}}</title>
+
+		<title>{% block title%}{% endblock %} - {{env.locals.name}}</title>
 
 		<!-- Web Fonts  -->
 		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Shadows+Into+Light" rel="stylesheet" type="text/css">
+
+		<link rel="canonical" href="{{env.locals.url}}{{page.url}}">
 		<link rel="stylesheet" href="/css/style.css">
 		<script src="/js/modernizr.js"></script>
 
