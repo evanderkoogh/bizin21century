@@ -8,8 +8,7 @@
   "plugins": [
     "wintersmith-nunjucks",
     "./plugins/contentHelpers.js",
-    "./plugins/paginator.coffee",
-    "./plugins/slugify.coffee"
+    "./plugins/paginator.coffee"
   ],
   "require": {
     "moment": "moment",

@@ -1,7 +1,6 @@
 module.exports = (grunt) ->
 
 	cfg =
-		pkg: grunt.file.readJSON 'package.json'
 		clean:
 			build: ['build']
 		cssmin:
@@ -15,6 +14,36 @@ module.exports = (grunt) ->
 				options:
 					compress: true
 					stylesheets: ['build/css/style.css']
+		imagemin:
+			dist:
+				options:
+					optimizationLevel: 3
+				files: [
+					expand: true
+					cwd: 'build/'
+					src: '**/*.{jpg,png}'
+					dest: 'build/'
+				]
+		htmlmin:
+			dist:
+				options:
+					removeComments: true
+					collapseWhitespace: true
+				files: [
+					expand: true
+					cwd: 'build/'
+					src: '**/*.html'
+					dest: 'build/'		
+				]
+		hashres: 
+			options:
+				fileNameFormat: '${name}.${hash}.cache.${ext}'
+			jscss:
+				src: ['build/css/style.css', 'build/js/*.js']
+				dest: ['build/**/*.html']
+			images:
+				src: ['build/**/*.jpg', 'build/**/*.png', '!build/img/icons/*']
+				dest: ['build/**/*.html']
 		s3:
 			options:
 				key: process.env.AWS_ACCESS_KEY_ID,
@@ -25,16 +54,41 @@ module.exports = (grunt) ->
 				maxOperations: 5
 			uncached:
 				sync: [
-    				src: 'build/**/*',
-    				dest: '/',
-    				rel: 'build'
-    				options:
-    					verify: true
+					src: ['build/**/*', '!build/**/*.cache.*']
+					dest: '/'
+					rel: 'build'
+					options:
+						verify: true
+					]
+			cached:
+				sync: [
+					src: ['build/**/*.cache.*']
+					dest: '/'
+					rel: 'build'
+					options:
+						verify: true
+						headers:
+							'Cache-Control': 'public,max-age=7776000'
     				]
+		wintersmith:
+			build: {}
 
 	grunt.initConfig cfg
 
 	grunt.loadNpmTasks 'grunt-contrib-clean'
 	grunt.loadNpmTasks 'grunt-contrib-cssmin'
+	grunt.loadNpmTasks 'grunt-contrib-htmlmin'
+	grunt.loadNpmTasks 'grunt-contrib-imagemin'
+	grunt.loadNpmTasks 'grunt-hashres'
 	grunt.loadNpmTasks 'grunt-uncss'
 	grunt.loadNpmTasks 'grunt-s3'
+	grunt.loadNpmTasks 'grunt-wintersmith'
+
+	grunt.registerTask 'release', [
+		'clean'
+		'wintersmith:build'
+		'hashres'
+		'imagemin'
+		'htmlmin'
+		's3'
+	]

@@ -2,11 +2,24 @@
 
 {% block title %}{{page.title}}{% endblock %}
 
+{% block meta %}
+		<meta name="keywords" content="Business in 21st Century, management, leadership, agile, lean, stoos" />
+		{% if page.metadata.description %}
+		<meta name="description" content="{{page.metadata.description}}">
+		{% else %}
+		<meta name="description" content="Rethinking the way we do business to survive &amp; thrive in the 21st Century">
+		{% endif %}
+		<meta name="author" content="{{page.metadata.author}}">
+{% endblock %}
+
 {% block ogp%}
 		<meta property="article:published_time" content="{{ moment(page.date).format('YYYY-MM-DDTHH:mm:ssZ') }}" />
 		<meta property="og:type" content="article" />
-		{% if page.description %}
-		<meta property="og:description" content="{{page.description}}"/>
+		{% if page.metadata.description %}
+		<meta property="og:description" content="{{page.metadata.description}}"/>
+		{% endif %}
+		{% if page.metadata.featuredImage %}
+		<meta property="og:image" content="{{env.locals.url}}{{page.metadata.featuredImage}}"/>
 		{% endif %}
 {% endblock%}
 
@@ -31,20 +44,24 @@
 											</span>
 											{% endif %}
 											<span><i class="icon icon-comments"></i> <a href="#disqus_thread">Comments</a></span>
+											{% if page.metadata.timeToRead %}
+											<span><i class="icon icon-clock-o"></i> {{page.metadata.timeToRead}}</span>
+											{% endif %}
 										</div>
 										<div class="clearfix media">
 											{% if page.metadata.featuredImage %}
-												<img class="img-rounded pull-left" height="250" src="{{ page.metadata.featuredImage }}" alt="">
+												<img class="img-rounded pull-left" width="30%" src="{{ page.metadata.featuredImage }}" alt="">
 												{% endif %}
-											{{ typogr(page.html).typogrify() }}
+											{{page.html}}
 										</div>
 										<div class="post-block post-share">
 											<h3><i class="icon icon-share"></i>Share this post</h3>
 												<!-- AddThis Button BEGIN -->
 												<div class="addthis_toolbox addthis_default_style ">
+													<a class="addthis_button_facebook_send"></a>
 													<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+													<a class="addthis_button_linkedin_counter"></a>
 													<a class="addthis_button_tweet"></a>
-													<a class="addthis_button_pinterest_pinit" pi:pinit:layout="horizontal"></a>
 													<a class="addthis_counter addthis_pill_style"></a>
 												</div>
 												<!-- AddThis Button END -->
@@ -56,7 +73,7 @@
 											<div class="img-thumbnail">
 												<img src="/img/headshot.jpg" alt="Erwin van der Koogh">
 											</div>
-											<p><strong class="name"><a href="http://twitter.com/evanderkoogh/">Erwin van der Koogh</a></strong></p>
+											<p><strong class="name"><a href="https://twitter.com/evanderkoogh/">Erwin van der Koogh</a></strong></p>
 											<p>Erwin is a typical <a href="http://en.wikipedia.org/wiki/Maven"><strong>Maven</strong></a>. A collector (and mixer) of cool ideas on how to <em>radically</em> change the way we do business. To unleash the potential of employees at all levels to delight customers everywhere. That is the only way to <em>survive &amp; thrive</em> in the 21<sup>st</sup> century.</p>
 										</div>
 

@@ -1,4 +1,4 @@
 # robots.txt
 User-agent: *
 Disallow: 
-Sitemap: /sitemap.xml
+Sitemap: http://businessin21stcentury.com/sitemap.xml

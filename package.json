@@ -12,11 +12,12 @@
     "typogr": "0.5.x",
     "grunt-contrib-clean": "~0.5.0",
     "grunt-uncss": "~0.1.5",
-    "grunt-processhtml": "~0.2.7",
     "grunt-contrib-uglify": "~0.2.7",
-    "grunt-contrib-connect": "~0.5.0",
     "grunt-wintersmith": "0.0.2",
     "grunt-s3": "~0.2.0-alpha.3",
-    "grunt-contrib-cssmin": "~0.7.0"
+    "grunt-contrib-cssmin": "~0.7.0",
+    "teacher": "0.0.1",
+    "grunt-hashres": "~0.3.4",
+    "grunt-contrib-htmlmin": "~0.1.3"
   }
 }
