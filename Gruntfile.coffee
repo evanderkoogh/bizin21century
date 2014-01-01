@@ -6,14 +6,14 @@ module.exports = (grunt) ->
 		cssmin:
 			combine:
 				files:
-					'contents/css/style.css': ['theme/css/bootstrap.css', 'theme/css/fonts/font-awesome/css/font-awesome.css', 'theme/css/theme.css', 'theme/css/theme-elements.css', 'theme/css/theme-animate.css', 'theme/css/theme-blog.css', 'theme/css/skins/blue.css', 'theme/css/custom.css', 'theme/css/theme-responsive.css']
+					'contents/css/style.css': ['theme/css/bootstrap.css', 'theme/css/theme.css', 'theme/css/theme-elements.css', 'theme/css/theme-animate.css', 'theme/css/theme-blog.css', 'theme/css/skins/blue.css', 'theme/css/custom.css', 'theme/css/theme-responsive.css']
 		uncss:
 			dist:
 				files:
 					'build/css/style.css': ['build/**/*.html']
 				options:
 					compress: true
-					stylesheets: ['build/css/style.css']
+					stylesheets: ['build/css/style.09b31c5f.cache.css']
 		imagemin:
 			dist:
 				options:
@@ -29,6 +29,9 @@ module.exports = (grunt) ->
 				options:
 					removeComments: true
 					collapseWhitespace: true
+					collapseBooleanAttributes: true
+					removeAttributeQuotes: true
+					removeRedundantAttributes: true
 				files: [
 					expand: true
 					cwd: 'build/'
@@ -43,7 +46,7 @@ module.exports = (grunt) ->
 				dest: ['build/**/*.html']
 			images:
 				src: ['build/**/*.jpg', 'build/**/*.png', '!build/img/icons/*']
-				dest: ['build/**/*.html']
+				dest: ['build/**/*.html', 'build/**/*.css', 'build/**/*.js']
 		s3:
 			options:
 				key: process.env.AWS_ACCESS_KEY_ID,
@@ -59,6 +62,8 @@ module.exports = (grunt) ->
 					rel: 'build'
 					options:
 						verify: true
+						headers:
+							'Cache-Control': 'public,max-age=600'
 					]
 			cached:
 				sync: [
@@ -83,6 +88,15 @@ module.exports = (grunt) ->
 	grunt.loadNpmTasks 'grunt-uncss'
 	grunt.loadNpmTasks 'grunt-s3'
 	grunt.loadNpmTasks 'grunt-wintersmith'
+
+	grunt.registerTask 'prepare', [
+		'clean'
+		'wintersmith:build'
+		'uncss'
+		'hashres'
+		'imagemin'
+		'htmlmin'
+	]
 
 	grunt.registerTask 'release', [
 		'clean'
