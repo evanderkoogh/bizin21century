@@ -12,8 +12,9 @@ module.exports = (grunt) ->
 				files:
 					'build/css/style.css': ['build/**/*.html']
 				options:
-					compress: true
-					stylesheets: ['build/css/style.09b31c5f.cache.css']
+					ignore: ['footer div.footer-ribon:before']
+					compress: false
+					stylesheets: ['build/css/style.css']
 		imagemin:
 			dist:
 				options:
@@ -55,8 +56,9 @@ module.exports = (grunt) ->
 				bucket: 'businessin21stcentury.com'
 				region: 'eu-west-1'
 				maxOperations: 5
+				gzip: true
 			uncached:
-				sync: [
+				upload: [
 					src: ['build/**/*', '!build/**/*.cache.*']
 					dest: '/'
 					rel: 'build'
@@ -66,12 +68,11 @@ module.exports = (grunt) ->
 							'Cache-Control': 'public,max-age=600'
 					]
 			cached:
-				sync: [
+				upload: [
 					src: ['build/**/*.cache.*']
 					dest: '/'
 					rel: 'build'
 					options:
-						verify: true
 						headers:
 							'Cache-Control': 'public,max-age=7776000'
     				]
@@ -92,7 +93,6 @@ module.exports = (grunt) ->
 	grunt.registerTask 'prepare', [
 		'clean'
 		'wintersmith:build'
-		'uncss'
 		'hashres'
 		'imagemin'
 		'htmlmin'
