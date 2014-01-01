@@ -15,7 +15,7 @@ timeToRead: 10 min
 
 
 So what is so different about the 21<sup>st</sup> century that we have to completely rethink the way we do business?  
-Just like the Industrial Revolution the cause of the change is technology. Instead of steam engines though this time it is the computer and the internet. And just like the Industrial Revolution it is most certainly not limited to technology. It has & will continue to have huge **economic** & **social** impacts and will shift the **balance of power**.
+Just like the Industrial Revolution the cause of the change is technology. Instead of steam engines though this time it is the computer and the internet. And just like the Industrial Revolution it is most certainly not limited to technology. It has & will continue to have huge **economic** & **social** impacts and will shift the **balance of power**.  
 Let's take a look at some of the trends more closely.
 
 <span class="more"></span>
