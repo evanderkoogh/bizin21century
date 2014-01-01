@@ -5,7 +5,7 @@ description: Zappos, a billion dollar company with 1500 employees is getting rid
 date: 2013-12-31
 template: post.html
 keywords: holacracy, zappos, valve, github, spotify, self-organisation, management
-featuredImage: http://about.zappos.com/sites/about.zappos.com/files/press/Zappos_Logo_1.jpg
+featuredImage: /articles/zappos-adopting-holacracy/Zappos_Logo_1.jpg
 changefreq: weekly
 priority: 0.7
 timeToRead: 3 min
