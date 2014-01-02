@@ -13,7 +13,7 @@ module.exports = (grunt) ->
 					'build/css/style.css': ['build/**/*.html']
 				options:
 					ignore: ['footer div.footer-ribon:before']
-					compress: false
+					compress: true
 					stylesheets: ['build/css/style.css']
 		imagemin:
 			dist:
@@ -58,7 +58,7 @@ module.exports = (grunt) ->
 				maxOperations: 5
 				gzip: true
 			uncached:
-				upload: [
+				sync: [
 					src: ['build/**/*', '!build/**/*.cache.*']
 					dest: '/'
 					rel: 'build'
@@ -68,7 +68,7 @@ module.exports = (grunt) ->
 							'Cache-Control': 'public,max-age=600'
 					]
 			cached:
-				upload: [
+				sync: [
 					src: ['build/**/*.cache.*']
 					dest: '/'
 					rel: 'build'
@@ -89,14 +89,6 @@ module.exports = (grunt) ->
 	grunt.loadNpmTasks 'grunt-uncss'
 	grunt.loadNpmTasks 'grunt-s3'
 	grunt.loadNpmTasks 'grunt-wintersmith'
-
-	grunt.registerTask 'prepare', [
-		'clean'
-		'wintersmith:build'
-		'hashres'
-		'imagemin'
-		'htmlmin'
-	]
 
 	grunt.registerTask 'release', [
 		'clean'
