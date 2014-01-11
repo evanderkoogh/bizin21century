@@ -1,7 +1,7 @@
 ---
 title: "Death of a proverb: If you do what you have always done.."
 author: Erwin van der Koogh
-description: "The new proverd should be: \"If you do what you have always done, you are lucky to still get what you always got.\""
+description: "The new proverd should be: If you do what you have always done, you are lucky to still get what you always got."
 date: 2014-01-06
 template: post.html
 keywords: disruption, learning organisation, innovators dilemma, rate of change
@@ -11,9 +11,9 @@ priority: 0.7
 timeToRead: 4 min
 ---
 
-You are very lucky to still get what you had always got.  
+You are very lucky if you still get what you had always got.  
 
-That might have been true once, but as we explored in an earlier blog post, <a href="/articles/what-is-so-different-about-21st-century/">the 21<sup>st</sup> century is a different beast</a>. All that change and the speed of which it happens means that your context today might be very different from yesterday, last week, last month and certainly last year. This is true on both a personal level (and what Anothony Robbins was refering to), but even more so for organisations.
+That might have been true once, but as we explored in an earlier blog post, <a href="/articles/what-is-so-different-about-21st-century/">the 21<sup>st</sup> century is a different beast</a>. All that change and the speed of which it happens means that your context today might be very different from yesterday, last week, last month and certainly last year. This is true on both a personal level (and what Anthony Robbins was refering to), but even more so for organisations.
 
 <span class="more"></span>
 
@@ -30,13 +30,13 @@ One of the best examples however is Blockbuster, the video rental store chain. N
 
 ### Changing is risky, not changing is riskier
 
-But it is way too easy to say executives at all those companies were stupid, blind or cowardly and that they had it coming to them. They all made very sensible decisions at every step of the way. They were responsible for tens of thousands people, to their shareholders and had invested huge amounts of the current operation. Anything that is a not a small incremental change is a big risk. What we do forget is that not changing is also extremely risky, but it is a death by a thousand cuts over many years.
+But it is way too easy to say executives at all those companies were stupid, blind or cowardly and that they had it coming to them. They all made very sensible decisions at every step of the way. They were responsible for tens of thousands of people, to their shareholders and had invested huge amounts of the current operation. Anything that is a not a small incremental change is a big risk. What we do forget is that not changing is also extremely risky, but it is a death by a thousand cuts over many years.
 
 #### Probability neglect bias
 
-One of the [many cognitive biases](http://en.wikipedia.org/wiki/List_of_cognitive_biases) that we humans have is Probability Neglect bias.
-We deal with small risks by either completely ignoring them or blowing them way out of proportion.
-The popular example is flying vs cars. Many people are terrified of flying, while completely ignore the (way higher) risk of injury while driving.
+One of the [many cognitive biases](http://en.wikipedia.org/wiki/List_of_cognitive_biases) that we humans have is Probability Neglect bias. 
+We deal with small risks by either completely ignoring them or blowing them way out of proportion. 
+The popular example is flying vs cars. Many people are terrified of flying, while completely ignore the (way higher) risk of injury while driving.  
 Another example is a current debate in my newly adopted country of Australia, which is mounting a huge operation to kill sharks at popular beaches because of the 'many' attacks.
 Research shows that many more people [die from drowning, fishing or diving](http://taronga.org.au/animals-conservation/conservation-science/australian-shark-attack-file/latest-figures).  
 

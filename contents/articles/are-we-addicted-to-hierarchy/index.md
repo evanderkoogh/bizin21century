@@ -1,5 +1,5 @@
 ---
-title: Are we Addicted to Hierarchy and Command & Control?
+title: Are we Addicted to Hierarchy and Command &amp; Control?
 author: Erwin van der Koogh
 description: Exploring the question why we are so afraid of getting rid of hierarchies.
 date: 2014-01-02

@@ -48,6 +48,8 @@ module.exports = (grunt) ->
 			images:
 				src: ['build/**/*.jpg', 'build/**/*.png', '!build/img/icons/*']
 				dest: ['build/**/*.html', 'build/**/*.css', 'build/**/*.js']
+		htmllint:
+        	all: ['build/articles/*.html']
 		s3:
 			options:
 				key: process.env.AWS_ACCESS_KEY_ID,
@@ -56,13 +58,19 @@ module.exports = (grunt) ->
 				bucket: 'businessin21stcentury.com'
 				region: 'eu-west-1'
 				maxOperations: 5
-				gzip: true
+			unzipped:
+				upload: [
+					src: ['build/*.xml']
+					dest: '/'
+					rel: 'build'
+				]
 			uncached:
 				sync: [
-					src: ['build/**/*', '!build/**/*.cache.*']
+					src: ['build/**/*', '!build/**/*.cache.*', '!build/*.xml']
 					dest: '/'
 					rel: 'build'
 					options:
+						gzip: true
 						verify: true
 						headers:
 							'Cache-Control': 'public,max-age=600'
@@ -73,6 +81,7 @@ module.exports = (grunt) ->
 					dest: '/'
 					rel: 'build'
 					options:
+						gzip: true
 						headers:
 							'Cache-Control': 'public,max-age=7776000'
     				]
@@ -86,6 +95,7 @@ module.exports = (grunt) ->
 	grunt.loadNpmTasks 'grunt-contrib-htmlmin'
 	grunt.loadNpmTasks 'grunt-contrib-imagemin'
 	grunt.loadNpmTasks 'grunt-hashres'
+	grunt.loadNpmTasks 'grunt-html'
 	grunt.loadNpmTasks 'grunt-uncss'
 	grunt.loadNpmTasks 'grunt-s3'
 	grunt.loadNpmTasks 'grunt-wintersmith'
