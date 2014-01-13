@@ -5,6 +5,7 @@
 {% block content %}
 							<div class="blog-posts">
 								{% for article in contents['index.page'].articles %}
+								{% if not article.metadata.hidden %}
 								<article class="post post-medium-image">
 									<div class="row">
 
@@ -43,6 +44,7 @@
 									</div>
 
 								</article>
+								{% endif %}
 								{% endfor %}
 							</div>
 {% endblock %}
