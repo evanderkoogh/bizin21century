@@ -1,0 +1,74 @@
+{
+	"filename": "index.html",
+	"template": "casestudy.html",
+	"title": "Case Studies: 21st Century Businesses",
+	"companies": [{
+		"name": "Valve",
+		"website": "http://www.valvesoftware.com",
+		"description": "One of the most beloved and succesful computer gaming companies in the world and a hotbed for disruptive innovation. Worth an estimated $2.5 billion with more than 330 employees they have no managers. ",
+		"links": [ {
+			"name": "Valve Handbook",
+			"url": "http://media.steampowered.com/apps/valve/Valve_Handbook_LowRes.pdf"
+		},
+		{
+			"name": "Why Valve? Or, what do we need corporations for and how does Valve’s management structure fit into today’s corporate world?",
+			"url": "http://blogs.valvesoftware.com/economics/why-valve-or-what-do-we-need-corporations-for-and-how-does-valves-management-structure-fit-into-todays-corporate-world/"
+		},
+		{
+			"name": "Varoufakis on Valve, Spontaneous Order, and the European Crisis",
+			"url": "http://www.econtalk.org/archives/2013/02/varoufakis_on_v.html"
+		},
+		{
+			"name": "Gabe Newell on what makes Valve tick",
+			"url": "http://www.washingtonpost.com/blogs/the-switch/wp/2014/01/03/gabe-newell-on-what-makes-valve-tick/"
+		},
+		{
+			"name": "Former Valve Employee: ‘It Felt a Lot Like High School’",
+			"url": "http://www.wired.com/gamelife/2013/07/wireduk-valve-jeri-ellsworth/"
+		}
+		]
+	}, {
+		"name": "Svenska Handelsbanken",
+		"website": "http://www.svenskahandelsbanken.com.sg",
+		"description": "Svenska Handelsbanken is a Swedish bank founded in 1871. In the 1970s Handelsbanken radically changed their organisation to be extremely decentralised and without budgets. Branch managers have almost complete control over any aspect of their branch.",
+		"links": [ {
+			"name": "Interview with Lennart Francke: Managing without budgets at Svenska Handelsbanken",
+			"url": "http://www.juergendaum.com/news/02_24_2003.htm"
+		},
+		{
+			"name": "A Blueprint for Better Banking: Svenska Handelsbanken ...",
+			"url": "http://www.amazon.com/gp/product/0857190970/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0857190970&linkCode=as2&tag=lightmedia-20"
+		}
+		]
+	}, {
+		"name": "Treehouse",
+		"website": "http://teamtreehouse.com",
+		"description": "<em>\"On June 20th 2013, we decided that our 4-day work week at Treehouse was’t insane enough so we went further: We removed all Managers.\"</em>",
+		"links": [ {
+			"name": "No Managers: Why We Removed Bosses at Treehouse",
+			"url": "http://ryancarson.com/post/61562761297/no-managers-why-we-removed-bosses-at-treehouse"
+		},
+		{
+			"name": "Working in a Flat Company",
+			"url": "http://blog.teamtreehouse.com/working-in-a-flat-company"
+		}
+		]
+	}, {
+		"name": "Zappos",
+		"website": "http://zappos.com",
+		"description": "Zappos is a billion dollar subsidiary of Amazon which sells shoes and accessories online. They are world-renowned for the culture & customer service.",
+		"links": [ {
+			"name": "About Zappos",
+			"url": "http://about.zappos.com"
+		},
+		{
+			"name": "Delivering Happiness (Book)",
+			"url": "http://www.amazon.com/gp/product/0446563048/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0446563048&linkCode=as2&tag=lightmedia-20"
+		},
+		{
+			"name": "Zappos adopts Holacracy",
+			"url": "http://businessin21stcentury.com/articles/zappos-adopting-holacracy/"
+		}
+		]
+	}]
+}

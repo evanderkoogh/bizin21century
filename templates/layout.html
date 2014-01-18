@@ -16,6 +16,7 @@
 		<meta property="og:title" content="{{page.title}}" />
 		<meta property="og:site_name" content="Business in the 21st Century" />
 		{% block ogp%}
+		<meta property="og:image" content="{{env.locals.url}}/img/logo.png"/>
 		<meta property="og:type" content="website" />
 		<meta property="og:description" content="Rethinking the way we do business to survive &amp; thrive in the 21st Century"/>
 		{% endblock%}
@@ -67,7 +68,7 @@
 						<div class="social-icons">
 								<ul class="social-icons">
 									<li class="twitter"><a href="https://twitter.com/evanderkoogh" target="_blank" data-placement="bottom" rel="tooltip" title="Twitter">Twitter</a></li>
-									<li class="googleplus"><a href="https://plus.google.com/+ErwinvanderKoogh/about" target="_blank" data-placement="bottom" rel="tooltip" title="Google+">Google+</a></li>
+									<li class="googleplus"><a href="https://plus.google.com/+Businessin21stcenturycom/about" target="_blank" data-placement="bottom" rel="tooltip" title="Google+">Google+</a></li>
 									<li class="rss"><a href="/feed.xml" target="_blank" data-placement="bottom" rel="tooltip" title="RSS">RSS</a></li>
 								</ul>
 							</div>
@@ -77,6 +78,7 @@
 								<li><a href="/about/">About us</a></li>
 								<li><a href="/books/">Books</a></li>
 								<li><a href="/case-studies/">Case-studies</a></li>
+								<li><a href="/quotes/">Quotes</a></li>
 							</ul>
 						</nav>
 					</div>
@@ -183,6 +185,7 @@
 								<li><a href="/about/">About us</a></li>
 								<li><a href="/books/">Books</a></li>
 								<li><a href="/case-studies/">Case-studies</a></li>
+								<li><a href="/quotes">quotes</a></li>
 							</ul>
 						</div>
 						<div class="col-md-3">
@@ -202,7 +205,7 @@
 								<div class="addthis_toolbox addthis_32x32_style addthis_vertical_style">
 									<a class="addthis_button_twitter_follow" addthis:userid="evanderkoogh"></a>
 									<a class="addthis_button_linkedin_follow" addthis:userid="evanderkoogh"></a>
-									<a class="addthis_button_google_follow" addthis:userid="+ErwinvanderKoogh"></a>
+									<a class="addthis_button_google_follow" addthis:userid="+Businessin21stcenturycom"></a>
 									<a class="addthis_button_rss_follow" addthis:userid="businessin21stcentury.com/feed.xml"></a>
 								</div>
 							<!-- AddThis Follow END -->
@@ -249,7 +252,9 @@
 		    'share' : {
 		      'position' : 'left',
 		      'numPreferredServices' : 5
-		    }, 
+		    },
+		    'whatsnext': {},
+		    'recommended': {}
 		  });
 		</script>
 		<!-- AddThis Smart Layers END -->

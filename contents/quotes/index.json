@@ -1,0 +1,27 @@
+{
+	"filename": "index.html",
+	"template": "quotes.html",
+	"title": "Quotes About Doing Business in the 21st Century",
+	"quotes": [ {
+		"id": "learning-org-senge",
+		"author": "Peter Senge",
+		"book": "The Fifth Discipline",
+		"bookISBN": "978-0385260947",
+		"bookAmazonId": "0385260947",
+		"tags": ["learning organisation", "competition"],
+		"text": "In the long run, the only sustainable source of competitive edge is your organisation's ability to learn faster than its competitors",
+		"tweet": "In the long run, the only sustainable competitive edge is your org's ability to learn faster than its competitors"
+	}, {
+		"id": "murphy",
+		"author": "Murphy",
+		"tags": ["failure", "scenarios"],
+		"text": "Anything that can go wrong, will go wrong",
+		"tweet": "Anything that can go wrong, will go wrong"
+	}, {
+		"id": "endless-sea",
+		"author": "Antione de Saint-Exupéry",
+		"tags": ["leadership", "purpose"],
+		"text": "If you want to build a ship, don't drum up the men to gather wood, divide the work, and give orders. Instead, teach them to yearn for the vast and endless sea. As for the future, your task is not to forsee it, but to enable it.",
+		"tweet": "If you want to build a ship, don't drum up men and give orders. Instead, teach them to yearn for the endless sea"
+	} ]
+}

@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+
+{% block title %}{{page.title}}{% endblock %}
+
+{% block content %}
+							<h1>{{page.title}}</h1>
+
+							When I am presenting I often use a quote or two in my presentations about the <a href="/articles/what-is-so-different-about-21st-century">realities of the 21<sup>st</sup> century</a>. This is my collection of quotes about doing Business in the 21<sup>st</sup> Century.
+							If you have any others I would love to hear about them in the <a href="#disqus_thread">comments</a>.</p>
+
+							<div id="quotes" class="row">
+							{% for quote in page.metadata.quotes %}
+								<div id="quote_{{quote.id}}">
+									<blockquote><p>{{quote.text}}</p><span class="pull-right">- {{quote.author}} {% if quote.book %} in <a href="http://www.amazon.com/dp/{{quote.bookAmazonId}}/?tag=lightmedia-20" title="Buy on Amazon" target="_blank">{{quote.book}}</a> {%endif%} &nbsp; <a class="addthis_button_tweet addthis_20x20_style" tw:count="none" tw:text="{{quote.tweet}}"></a> </span></blockquote>
+								</div>	
+								<hr />	
+							{% endfor %}
+							</div>
+
+							<div class="post-block post-share">
+								<h3><i class="fa fa-share"></i>Share this</h3>
+									<!-- AddThis Button BEGIN -->
+									<div class="addthis_toolbox addthis_default_style ">
+										<a class="addthis_button_facebook_send"></a>
+										<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+										<a class="addthis_button_linkedin_counter"></a>
+										<a class="addthis_button_tweet"></a>
+										<a class="addthis_button_pinterest_pinit" pi:pinit:layout="horizontal"></a>
+										<a class="addthis_counter addthis_pill_style"></a>
+									</div>
+									<!-- AddThis Button END -->
+
+							</div>
+
+							<br />
+
+							<div id="disqus_thread"></div>
+
+							
+							<script type="text/javascript">
+								var disqus_shortname = 'biz21c';
+								var disqus_identifier = 'quotes';
+								var disqus_title = '{{page.title}}';
+								var disqus_url = 'http://businessin21stcentury.com/quotes/';
+								(function() {
+									var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+									dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+									(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+								})();
+							</script>
+							<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+							<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+{% endblock %}

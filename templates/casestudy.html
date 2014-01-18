@@ -1,0 +1,81 @@
+{% extends "layout.html" %}
+
+{% block title %}{{page.title}}{% endblock %}
+
+{% block content %}
+							<h1>{{page.title}}</h1>
+							<p>Some companies who have already adapted to (some of) the <a href="/articles/what-is-so-different-about-21st-century">realities of the 21<sup>st</sup> century</a>. They are a great source of inspiration and experience. If you know of any other interesting &amp; inspiring companies, please let me know in the <a href="#disqus_thread">comments</a>.</p>
+
+							<h2>Profiles</h2>
+
+							<p>We have done up company profiles on the following companies:</p>
+
+							{% for article in env.helpers.getArticles(contents) %}
+							{% if article.metadata.casestudy %}
+							
+							<div id="profile_{{ article.metadata.company }}" class="row">
+								<div class="col-md-2">
+									<a href="{{article.url}}"><img src="{{article.metadata.featuredImage}}" width="100%"/></a>
+								</div>
+								<div class="col-md-10">
+									<a href="{{article.url}}"><h3>{{article.metadata.company}}</h3></a>
+									<p>{{article.metadata.description}}</p>
+								</div>
+							</div>
+
+							{% endif %}
+							{% endfor %}
+							</ul>
+
+							<h2>Links</h2>
+
+							<p>These are great examples as well with some links that will be turned into full profiles soon</p>
+							<ul>
+							{% for company in page.metadata.companies %}
+								<li><a href="{{company.website}}">{{company.name}}</a> - {{company.description}}
+									<ul>
+										{% for link in company.links %}
+										<li><a href="{{link.url}}">{{link.name}}</a></li>
+										{% endfor %}
+									</ul>
+								</li>
+							{% endfor%}
+							</ul>
+
+							<h2>There are many others</h2>
+							<p>There are tons of interesting &amp; inspiring companies out there. If you have one to add, please leave a link to the company and why it is different in a comment down below.</p>
+
+							<div class="post-block post-share">
+								<h3><i class="fa fa-share"></i>Share this</h3>
+									<!-- AddThis Button BEGIN -->
+									<div class="addthis_toolbox addthis_default_style ">
+										<a class="addthis_button_facebook_send"></a>
+										<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+										<a class="addthis_button_linkedin_counter"></a>
+										<a class="addthis_button_tweet"></a>
+										<a class="addthis_counter addthis_pill_style"></a>
+									</div>
+									<!-- AddThis Button END -->
+
+							</div>
+
+							<br />
+
+							<div id="disqus_thread"></div>
+
+							
+							<script type="text/javascript">
+								var disqus_shortname = 'biz21c';
+								var disqus_identifier = 'case-studies';
+								var disqus_title = 'Case Studies on How to do Business in the 21st Century';
+								var disqus_url = 'http://businessin21stcentury.com/case-studies/';
+								(function() {
+									var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+									dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+									(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+								})();
+							</script>
+							<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+							<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+{% endblock %}
