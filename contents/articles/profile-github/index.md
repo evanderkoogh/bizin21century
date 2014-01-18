@@ -4,15 +4,16 @@ author: Erwin van der Koogh
 description: "Github is an hugely successful IT company that is also challenging the way companies should manage their business."
 date: 2014-01-13
 template: post.html
+casestudy: true
+company: Github
 keywords: management, github, autonomy, purpose, freedom, culture, company profile
 featuredImage: /articles/profile-github/octocat.png
 changefreq: weekly
 priority: 0.7
 timeToRead: 6 min
-hidden: true
 ---
 
-Github is the largest software source code hosting company in the world. Their product is used by 4 million users to collaborate on 10 million projects. But what is so interesting about the company is that they managed to build upon their open-source roots and scale it up to 240 employees in every timezone imaginable without having managers.    
+Github is the largest software source code hosting company in the world. Their product is used by 4 million software developers to collaborate on 10 million projects. But what is so interesting about the company is that they managed to build upon their open-source roots and scale up to 240 employees in every timezone imaginable without having **any** managers.    
 Curious what they are doing differently I set out to find out as much as I could. This is my summary of that research.
 Comments, corrections and additions are greatly appreciated.
 
@@ -22,7 +23,7 @@ The founders of Github have put together a very short (3:30 min) video of their 
 
 ### People choose their own work
 
-Nobody at Github tells someone else what to work on. This might sound like a great recipe for  spectacular disaster, but it has worked for more than 5 years scaling to over 200 people for them. One of the rules they have is that you can not work on something alone. So if you have a great idea and you can find at least one or two other people you can start a team.  
+Nobody at Github tells someone else what to work on. This might sound like a great recipe for spectacular disaster, but it has worked for more than 5 years scaling to over 200 people for them. One of the rules they have is that you can not work on something alone. So if you have a great idea and you can find at least one or two other people you can start a team.  
 
 A great quote by Ryan Tomayko on his blog post about the [management style](http://tomayko.com/writings/management-style) at Github sums it all up:
 >Telling people what to do is lazy. Instead, try to convince them with argument. This is how humans interact when there's no artificial authority structure and it works great. If you can't convince people through argument then maybe you shouldn't be doing it.
@@ -37,12 +38,12 @@ How do you prevent people from cheating or taking advantage of it I hear you ask
 The best quote from that video explains that:
 > Our biggest challenge is turning it off. If you can work all the time and you love what you do, some people work all the time.
 
-In short. Hire smart, motivated people and trust and support them to get on with their job.
+In short. Hire smart & motivated people and trust and support them to get on with their job.
 
 ## Respect Creativity
 
 In his book <a href="http://www.amazon.com/gp/product/B002XHNNWA/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B002XHNNWA&linkCode=as2&tag=lightmedia-20">The Creative Economy: How People Make Money from Ideas</a><img src="http://ir-na.amazon-adsystem.com/e/ir?t=lightmedia-20&l=as2&o=1&a=B002XHNNWA" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /> John Howkins describes how we are moving from a manufacturing economy to one based on ideas. 
-Github respects creativity in a number of ways
+Github respects creativity in a number of ways:
 
 ### No meetings
 
