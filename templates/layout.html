@@ -144,10 +144,12 @@
 								<hr />
 
 								<!-- AddThis Trending Content BEGIN -->
+								<h4>Trending</h4>
 								<div id="addthis_trendingcontent"></div>
+								<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-52ba72ac36cf30b7"></script>
 								<script type="text/javascript">
 									addthis.box("#addthis_trendingcontent", {
-									    feed_title : "Trending",
+									    feed_title : "",
 									    feed_type : "trending",
 									    feed_period : "month",
 									    num_links : 5,
@@ -260,7 +262,6 @@
 				data_ga_social: true
 			};
 		</script>
-		<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-52ba72ac36cf30b7"></script>
 		<script type="text/javascript">
 		  addthis.layers({
 		    'theme' : 'transparent',
@@ -268,7 +269,9 @@
 		      'position' : 'left',
 		      'numPreferredServices' : 5
 		    },
-		    'whatsnext': {},
+		    'whatsnext': {
+		    	'theme' : "grey"
+		    },
 		  });
 		</script>
 		<!-- AddThis Smart Layers END -->
