@@ -10,7 +10,7 @@
 
 							<div id="quotes" class="row">
 							{% for quote in page.metadata.quotes %}
-								<div id="quote_{{quote.id}}">
+								<div id="quote_{{quote.id}}" class="row">
 									<blockquote><p>{{quote.text}}</p><span class="pull-right">- {{quote.author}} {% if quote.book %} in <a href="http://www.amazon.com/dp/{{quote.bookAmazonId}}/?tag=lightmedia-20" title="Buy on Amazon" target="_blank">{{quote.book}}</a> {%endif%} &nbsp; <a class="addthis_button_tweet addthis_20x20_style" tw:count="none" tw:text="{{quote.tweet}}"></a> </span></blockquote>
 								</div>	
 								<hr />	
