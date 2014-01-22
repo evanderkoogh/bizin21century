@@ -70,5 +70,19 @@
 			"url": "http://businessin21stcentury.com/articles/zappos-adopting-holacracy/"
 		}
 		]
-	}]
+	} , {
+		"name": "Intuit",
+		"website": "http://www.intuit.com",
+		"description": "Intuit is a software company specialized in accounting and tax software. A $17 billion company that is aiming to become a network of Lean Startups.",
+		"links": [ {
+			"name": "Scott Cook - Intuit Rapid Experimentation - (Video 27min)",
+			"url": "http://www.youtube.com/watch?v=Uigytd8UuwY"
+		},
+		{
+			"name": "How Lean startup methodologies are used at Intuit India to improve the lives of farmers in India.",
+			"url": "http://blog.leanmantra.in/how-leanstartup-methodologies-are-used-at-intuit-to-develop-a-product/"
+		}
+		]
+	}
+	]
 }
