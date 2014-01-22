@@ -4,7 +4,7 @@
 
 {% block content %}
 							<div class="blog-posts">
-								{% for article in articles %}
+								{% for article in contents['index.page'].articles %}
 								{% if not article.metadata.hidden %}
 								<article class="post post-medium-image">
 									<div class="row">
@@ -46,18 +46,5 @@
 								</article>
 								{% endif %}
 								{% endfor %}
-
-								<ul class="pagination pagination-lg pull-right">
-									<li><a href="/{{ contents['index.page'].getFilename()}}">«</a></li>
-									{% if prevPage %}
-									<li><a href="/{{ prevPage.getFilename() }}">{{prevPage.pageNum}}</a></li>
-									{% endif %}
-									<li class="active"><a href="#">{{pageNum}}</a></li>
-									{% if nextPage %}
-									<li><a href="/{{ nextPage.getFilename() }}">{{nextPage.pageNum}}</a></li>
-									{% endif %}
-									<li><a href="/{{ contents['last.page'].getFilename()}}">»</a></li>
-								</ul>
-								
 							</div>
 {% endblock %}
