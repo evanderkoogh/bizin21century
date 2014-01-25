@@ -29,6 +29,16 @@
 		"author_twitter": "@jurgenappelo",
 		"tags": ["growth"],
 		"text": "If the purpose of your business is merely growth, from a scientific perspective we could call it a tumor.",
-		"tweet": "If the purpose of your business is merely growth, from a scientific perspective we could call it a tumor - @jurgenappelo"
-	} ]
+		"tweet": "If the purpose of your business is just growth, from a scientific perspective we could call it a tumor -@jurgenappelo"
+	} , {
+		"id": "scar-tissue",
+		"author": "Fried and Hansson",
+		"book": "Rework",
+		"bookISBN": "978-0307463746",
+		"bookAmazonId": "0307463745",
+		"tags": ["policies", "scar-tissue"],
+		"text": "Policies are organizational scar tissue. They are codified overreations to situations that are unlikely to happen again.",
+		"tweet": "Policies are organizational scar tissue. They are codified overreations to situations unlikely to happen again"
+	}]
 }
+
