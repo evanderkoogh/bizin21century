@@ -7,7 +7,6 @@
   },
   "plugins": [
     "wintersmith-nunjucks",
-    "./plugins/contentHelpers.js",
     "./plugins/paginator.coffee"
   ],
   "require": {
