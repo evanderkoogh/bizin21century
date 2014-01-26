@@ -21,5 +21,10 @@
   },
   "paginator": {
     "perPage": 4
+  },
+  "nunjucks": {
+    "filterdir": "filters",
+    "filters": ["absolutize"]
   }
+
 }

@@ -19,7 +19,7 @@
 		<meta property="og:description" content="{{page.metadata.description}}"/>
 		{% endif %}
 		{% if page.metadata.featuredImage %}
-		<meta property="og:image" content="{{env.locals.url}}{{page.metadata.featuredImage}}"/>
+		<meta property="og:image" content="{{page.metadata.featuredImage|absolutize(env.locals.url)}}"/>
 		{% else %}
 		<meta property="og:image" content="{{env.locals.url}}/img/logo.png"/>
 		{% endif %}
@@ -30,11 +30,11 @@
 								<article class="post post-large-image blog-single-post">
 									<div class="post-date">
 										<span class="day">{{ moment(page.date).format('D') }}</span>
-										<span class="month">{{ moment(page.date).format('MMM') }}</span>
 									</div>
 									<div class="post-content">
 
 										<h2><a href="#">{{page.title}}</a></h2>
+										<h2><a href="#"></a></h2>
 
 										<div class="post-meta">
 											<span><i class="fa fa-user"></i> By <a href="/about/">{{page.metadata.author}}</a> </span>
