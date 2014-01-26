@@ -39,6 +39,13 @@
 		"tags": ["policies", "scar-tissue"],
 		"text": "Policies are organizational scar tissue. They are codified overreations to situations that are unlikely to happen again.",
 		"tweet": "Policies are organizational scar tissue. They are codified overreations to situations unlikely to happen again"
+	} , {
+		"id": "create-customer",
+		"author": "Peter Drucker",
+		"tags": ["purpose", "company", "customer", "drucker"],
+		"text": "There is only one valid definition of business purpose: to create a customer.",
+		"tweet": "There is only one valid definition of business purpose: to create a customer. - Peter Drucker"
+
 	}]
 }
 
