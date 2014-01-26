@@ -1,7 +1,7 @@
 ---
 title: What can we learn from Postcrossing, an impossible site
 author: Erwin van der Koogh
-description: Zappos, a billion dollar company with 1500 employees is getting rid of hierarchies & managers.
+description: Postcrossing is a website where people come to exchange physical cards with complete strangers. What can we learn?
 date: 2014-01-20
 template: post.html
 keywords: postcrossing, mail, start-up, $100 startup, passive income, community, trust
