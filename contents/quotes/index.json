@@ -2,7 +2,26 @@
 	"filename": "index.html",
 	"template": "quotes.html",
 	"title": "Quotes About Doing Business in the 21st Century",
-	"quotes": [ {
+	"quotes": [
+	{
+		"id": "kill-initiaves",
+		"author": "William L. McKnight, former president and chairman of the board of 3M*",
+		"tags": ["mistakes", "failure", "innovation", "initiative"],
+		"text": "Management that is destructively critical when mistakes are made kills initiative. And it’s essential that we have many people with initiative, if we are to continue to grow.",
+		"tweet": "Management that is critical when mistakes are made kills initiative. Which is essential if we are to continue to grow"
+	}, {
+		"id": "fail-better",
+		"author": "Samuel_Beckett",
+		"tags": ["failure", "persistent"],
+		"text": "Ever tried. Ever failed. No matter. Try again. Fail again. Fail better.",
+		"tweet": "Ever tried. Ever failed. No matter. Try again. Fail again. Fail better. - Samuel_Beckett"
+	}, {
+		"id": "9000-shots",
+		"author": "Michael Jordan",
+		"tags": ["failure", "persistent"],
+		"text": "I've missed more than 9000 shots in my career. I've lost almost 300 games. 26 times, I've been trusted to take the game winning shot and missed. I've failed over and over and over again in my life. And that is why I succeed.",
+		"tweet": "I've failed over and over and over again in my life. And that is why I succeed. - Michael Jordan"
+	}, {
 		"id": "learning-org-senge",
 		"author": "Peter Senge",
 		"book": "The Fifth Discipline",
@@ -47,5 +66,6 @@
 		"tweet": "There is only one valid definition of business purpose: to create a customer. - Peter Drucker"
 
 	}]
+		
 }
 
